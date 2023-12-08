@@ -55,18 +55,18 @@ const callback = entries=>{
     });
 };
 
-// const observer = new IntersectionObserver(callback);
+const observer = new IntersectionObserver(callback);
 
-// images.forEach(image=>{
-//     observer.observe(image);
-// });
-// fetch("http://www.163.com")
-//     .then((res)=>{
-//         if(res.ok){
-//             console.log("successful");
-//         }else{
-//             console.log("unsuccessful");
-//         }
-//         return res;
-//     })
+images.forEach(image=>{
+    observer.observe(image);
+});
+fetch("http://www.163.com")
+    .then((res)=>{
+        if(res.ok){
+            console.log("successful");
+        }else{
+            console.log("unsuccessful");
+        }
+        return res;
+    })
     
